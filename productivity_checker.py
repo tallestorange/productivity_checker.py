@@ -33,7 +33,7 @@ class Productivity_Checker(object):
         if until:
             args += ["--until=" + until]
         if self.username:
-            args += ["--author" + self.username]
+            args += ["--author='" + self.username + "'"]
 
         args_awk = [
             "|",
